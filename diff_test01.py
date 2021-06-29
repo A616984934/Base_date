@@ -3,3 +3,7 @@
 
 def test1():
     print('第一次增加的函数，哈哈哈')
+    print('我修改了 哈哈哈')
+def test2():
+    print('啦啦')
+    
