@@ -1,0 +1,16 @@
+diff --git a/diff_test01.py b/diff_test01.py
+index 82d387f..1acf4d4 100644
+--- a/diff_test01.py
++++ b/diff_test01.py
+@@ -2,4 +2,8 @@
+ 
+ 
+ def test1():
+-    print('第一次增加的函数，哈哈哈')
+\ No newline at end of file
++    print('第一次增加的函数，哈哈哈')
++    print('我修改了 哈哈哈')
++def test2():
++    print('啦啦')
++    
+\ No newline at end of file
