@@ -5,7 +5,7 @@ require_once dirname(__FILE__).'/vendor/autoload.php';  # 在composer生成的ve
 use SebastianBergmann\CodeCoverage\CodeCoverage;
 
 $coverage = new CodeCoverage;
-
+echo 'giaogiao';
 $coverage->filter()->addDirectoryToWhitelist('/var/www/html/userinfo.php');  # 白名单<br>$coverage->filter()->removeDirectoryFromWhitelist('/var/www/html/userinfo.php'); # 从白名单中移除文件夹<br>$coverage->filter()->removeFileFromWhitelist('/var/www/html/userinfo.php'); # 从白名单中移除文件
 
 $coverage->start('<Site coverage>');#开始统计
