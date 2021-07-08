@@ -82,6 +82,27 @@ if (! is_dir($covdir)) {
     mkdir($covdir, 0777);
 }
 
+class Reporter{
+	private $logDir = '';
+	private $ignoreFile = '';
+
+	function __construct($logDir,$ignoreFile){
+		$this->logDir = $logDir;
+		$this->ignoreFile = $ignoreFile;
+	}
+
+	protected function isIgnore($srcPath){
+		$ignores = require($this->ignoreFile);
+
+		foreach ($ignores as $key => $value) {			
+			$count = substr_count($srcPath,$value);
+			if($count > 0){
+				return true;
+			}
+		}
+		return false;
+	}
+	
 
 
 # 制定域名进行统计当前配置
