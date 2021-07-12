@@ -64,7 +64,6 @@ function __coverage_stop(CodeCoverage $coverage){
     $writer->process($coverage, dirname(__FILE__) . '/coverage_html');}
 
 
-
 // 添加相应的内容
 $ip = gethostbyname($_SERVER['HTTP_HOST']);
 // echo $ip;
@@ -102,7 +101,8 @@ class Reporter{
 		}
 		return false;
 	}
-	
+# 104行新增内容
+class===funciton 
 
 
 # 制定域名进行统计当前配置
@@ -112,6 +112,11 @@ if ($_SERVER['HTTP_HOST']=='mydomain.com'){
     $coverage->start('<Site coverage>');#开始统计
     register_shutdown_function('__coverage_s',$coverage,$_dir = 'cov');#注册关闭方法
 }
+
+
+#117行新增内容 哈哈
+clss ==111
+
 function __coverage_s(CodeCoverage $coverage,$_dir){
     $coverage->stop();#停止统计
     $cov = '<?php return unserialize(' . var_export(serialize($coverage), true) . ');';#获取覆盖结果，注意使用了反序列化
