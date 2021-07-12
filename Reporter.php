@@ -1,6 +1,6 @@
 <?php
 namespace Woojean\PHPCoverage;
-
+你说你的牛牛
 class Reporter{
 	private $logDir = '';
 	private $ignoreFile = '';
@@ -28,7 +28,7 @@ class Reporter{
 		}
 		return false;
 	}
-	
+wo 说我的牛牛
 
 	public function report(){
 		var_dump('报告都没吊用吗？');

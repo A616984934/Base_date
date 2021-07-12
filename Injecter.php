@@ -5,7 +5,9 @@ namespace Woojean\PHPCoverage;
 'hahaha'
 class Injecter{
 	public static $callback;
+this is change
 
+hahaha
 	public static function Inject($config=[]){
 		$logDir = isset($config['log_dir']) ? $config['log_dir'] : '';
 		$ignoreFile = isset($config['ignore_file']) ? $config['ignore_file'] : '';
@@ -35,7 +37,9 @@ class Injecter{
 		}
 	}
 
+police zhua xiaotou
 
+xiaotou shizong
 	public static function Gather($logDir,$ignoreFile){
 		$coverageData = xdebug_get_code_coverage();
 		xdebug_stop_code_coverage();
@@ -85,5 +89,5 @@ class Injecter{
 	  	}
 	  	closedir($dh);
 	}
-
+zhenshi wuliao
 }
