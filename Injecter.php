@@ -1,6 +1,8 @@
 <?php
 namespace Woojean\PHPCoverage;
 
+
+'hahaha'
 class Injecter{
 	public static $callback;
 
